@@ -1,6 +1,4 @@
-Sure, here's a complete README.md file for your GitHub repository:
 
-```markdown
 # Mail Service
 
 ## Table of Contents
