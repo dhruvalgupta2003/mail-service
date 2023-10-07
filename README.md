@@ -164,6 +164,19 @@ The knapsack algorithm helps you solve this problem efficiently. Here's how it w
 
 In simpler terms, the algorithm helps you find the most cost-effective way to ship a parcel by choosing the right combination of trains based on their weight, volume, and cost. It considers all possible combinations and selects the one with the lowest cost. This is useful for logistics and shipping optimization.
 ### Hungarain Algorithm for Assignment 
-### Transaction Management
+Imagine you have a list of available trains and a list of parcels that need to be shipped. Each train and parcel have different characteristics like weight, volume, and other factors. Your goal is to find the best way to assign parcels to trains to minimize the overall shipping cost.
+
+The Hungarian algorithm helps you achieve this by following these steps:
+
+1. **Create a Cost Matrix:** To start, we create a table (matrix) called the "cost matrix." This matrix represents the cost of assigning each parcel to each train. The cost is calculated based on various factors like the difference in weight and volume between the train and parcel.
+
+2. **Find Optimal Assignment:** The algorithm then finds the optimal assignment of parcels to trains that minimizes the total cost. It ensures that each parcel is assigned to only one train, and each train carries at most one parcel.
+
+3. **Total Cost Calculation:** After finding the assignment, the algorithm calculates the total cost by adding up the costs of the chosen assignments. This total cost represents the minimum cost to ship all parcels.
+
+4. **Result:** The result is a list of train indices and parcel indices, indicating which parcel is assigned to which train to achieve the lowest overall cost.
+
+In simpler terms, the Hungarian algorithm helps you figure out the most efficient way to match parcels with trains to reduce shipping expenses. It takes into account various factors and ensures that each parcel is handled by a suitable train, resulting in cost savings and better logistics.
+
 ### Online Bidding System Logic
 
