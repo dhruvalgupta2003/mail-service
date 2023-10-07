@@ -69,14 +69,12 @@ Describe the directory structure and key files of the project.
 
 ```
 mail-service/
-    ├── app/
+    ├── mail_service/
     │   ├── ...
-    ├── config/
+    ├── scheduling
     │   ├── ...
-    ├── static/
-    │   ├── ...
-    ├── templates/
-    │   ├── ...
+    ├── readme.md
+    |── Mail Service.postman_collection.json
     ├── manage.py
     ├── requirements.txt
     └── ...
@@ -86,6 +84,8 @@ mail-service/
 
 - `manage.py`: Django management script.
 - `requirements.txt`: List of project dependencies.
+- `Mail Service.postman_collection.json`: contains all the postman api data
+
 
 ## Database Models
 
@@ -114,8 +114,6 @@ Explain how to access the Django admin panel and manage models through it.
 ### Managing Models through Admin
 
 ## API Endpoints
-
-List the available API endpoints along with request and response examples.
 
 ### List of API Endpoints
 Here's a list of API endpoints available in the project:
@@ -146,97 +144,13 @@ Here's a list of API endpoints available in the project:
 - `POST /scheduling/withdraw-parcel/<int:parcel_id>/`: Withdraw a parcel from booking.
 
 These endpoints allow you to interact with various aspects of the Mail Service application, including managing trains, parcels, auctions, and bidders, as well as calculating shipping costs and parcel withdrawal.
+
 ## Business Logic
 
 Describe the core business logic of the project, including algorithms and processes.
 
 ### Knapsack Algorithm for Cost Calculation
+### Hungarain Algorithm for Assignment 
 ### Transaction Management
 ### Online Bidding System Logic
 
-## Testing
-
-Explain the testing approach for the project, including unit tests, integration tests, and test data.
-
-### Unit Tests
-### Integration Tests
-### Test Data
-
-## Deployment
-
-Provide instructions for deploying the Django application and configuring hosting and server settings.
-
-### Deploying the Django Application
-### Hosting and Server Configuration
-
-## Error Handling
-
-Explain how exceptions and errors are handled in the project.
-
-### Handling Exceptions and Errors
-### Error Responses
-
-## Security
-
-Detail the security measures implemented in the project, including authentication, data validation, and protection against common attacks.
-
-### Authentication and Authorization
-### Data Validation and Sanitization
-### Protecting Against Common Attacks
-
-## Performance Optimization
-
-Discuss strategies for optimizing performance, such as caching and database query optimization.
-
-### Caching Strategies
-### Database Query Optimization
-
-## Logging and Monitoring
-
-Explain how logging is configured and how the application is monitored.
-
-### Logging Configuration
-### Monitoring Application
-
-## Future Enhancements
-
-List potential improvements and a feature roadmap for the project's future development.
-
-### Potential Improvements
-### Feature Roadmap
-
-## Contributing
-
-Outline how others can contribute to the project, including contribution guidelines.
-
-### How to Contribute
-### Contribution Guidelines
-
-## License
-
-Specify the project's license and include any relevant license files.
-
-### Project License
-
-## Credits
-
-Acknowledge and credit contributors or libraries used in the project.
-
-### Acknowledgments and Credits
-
-## Contact Information
-
-Provide contact information for project maintainers and support channels.
-
-### Project Maintainers
-### Support Channels
-
-## Appendices
-
-Include additional sections like a glossary, references, or any other relevant information.
-
-### Glossary
-### References
-```
-
-Feel free to replace the placeholder text with the specific details and content related to your Mail Service project. Make sure to organize your documentation logically and use proper formatting for clarity. 
