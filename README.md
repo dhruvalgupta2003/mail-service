@@ -118,15 +118,34 @@ Explain how to access the Django admin panel and manage models through it.
 List the available API endpoints along with request and response examples.
 
 ### List of API Endpoints
-### Request and Response Examples
+Here's a list of API endpoints available in the project:
 
-#### Get all auctions
-#### Get auction details
-#### Add a bidder to an auction
-#### Place a bid in an auction
-#### Get the cost of shipping
-#### Book a train
+### Trains and Parcels
 
+- `POST /scheduling/create_train/`: Create a new train.
+- `POST /scheduling/create_owner/`: Create a new parcel owner.
+- `POST /scheduling/create_parcel/`: Create a new parcel.
+- `GET /scheduling/list_trains/`: List all trains.
+- `GET /scheduling/list_parcels/`: List all parcels.
+- `POST /scheduling/book_train/`: Book a train for a parcel.
+- `GET /scheduling/get_train_status/<int:train_id>/`: Get the status of a specific train.
+- `GET /scheduling/get_parcel_status/<int:parcel_id>/`: Get the status of a specific parcel.
+- `GET /scheduling/get_cost_of_shipping/<int:parcel_id>/`: Calculate the cost of shipping for a parcel.
+- `GET /scheduling/get_total_cost_of_shipping/<int:owner_id>/`: Calculate the total cost of shipping for parcels belonging to an owner.
+
+### Auctions and Bidders
+
+- `POST /scheduling/create_auction/`: Create a new auction.
+- `GET /scheduling/view_auction/<int:auction_id>/`: View details of a specific auction.
+- `GET /scheduling/view_all_auctions/`: View details of all auctions.
+- `POST /scheduling/add_bidder/`: Add a new bidder.
+- `POST /scheduling/place_bid/`: Place a bid in an auction.
+
+### Parcel Withdrawal
+
+- `POST /scheduling/withdraw-parcel/<int:parcel_id>/`: Withdraw a parcel from booking.
+
+These endpoints allow you to interact with various aspects of the Mail Service application, including managing trains, parcels, auctions, and bidders, as well as calculating shipping costs and parcel withdrawal.
 ## Business Logic
 
 Describe the core business logic of the project, including algorithms and processes.
