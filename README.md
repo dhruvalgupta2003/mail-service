@@ -150,6 +150,19 @@ These endpoints allow you to interact with various aspects of the Mail Service a
 Describe the core business logic of the project, including algorithms and processes.
 
 ### Knapsack Algorithm for Cost Calculation
+Imagine you have a list of different items (in this case, trains) with their weights, volumes, and costs. You also have a parcel with a certain weight and volume. Your goal is to find the best combination of items (trains) to carry the parcel, minimizing the cost.
+
+The knapsack algorithm helps you solve this problem efficiently. Here's how it works:
+
+1. **Initialization:** First, we calculate the maximum possible total weight and volume of all available trains. We create a table (dp) to store the minimum cost for different capacities and train options. Initially, all values in this table are set to infinity.
+
+2. **Dynamic Programming:** We iterate through each train and consider whether to include it in the solution or not. For each train, we calculate the minimum cost to carry the parcel with the given weight and volume. We update the dp table with this minimum cost.
+
+3. **Backtracking:** Once we've filled the dp table, we find the minimum cost (the last cell with a value less than infinity). We then trace back to identify which trains were selected to achieve this minimum cost.
+
+4. **Result:** The result is the minimum cost to carry the parcel and the list of selected trains that achieve this cost.
+
+In simpler terms, the algorithm helps you find the most cost-effective way to ship a parcel by choosing the right combination of trains based on their weight, volume, and cost. It considers all possible combinations and selects the one with the lowest cost. This is useful for logistics and shipping optimization.
 ### Hungarain Algorithm for Assignment 
 ### Transaction Management
 ### Online Bidding System Logic
